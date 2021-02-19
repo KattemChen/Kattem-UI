@@ -1,14 +1,14 @@
 <template>
-  <Kettem></Kettem>
+  <div>
+    导航栏:
+    <router-link to="/"> Kattem |</router-link>
+    <router-link to="/Kattem2"> Kattem2 </router-link>
+  </div>
+  <router-view></router-view>
 </template>
 
 <script>
-import Kettem from './components/Kettem.vue'
-
 export default {
-  name: 'App',
-  components: {
-    Kettem
-  }
+  name: 'App'
 }
 </script>
