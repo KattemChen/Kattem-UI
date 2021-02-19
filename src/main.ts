@@ -1,6 +1,6 @@
 import { createApp } from "vue";
-import Kattem from "./components/Kattem.vue";
-import Kattem2 from "./components/Kattem2.vue";
+import Home from "./views/Home.vue";
+import Doc from "./views/Doc.vue";
 
 import App from "./App.vue";
 import "./index.css";
@@ -12,11 +12,11 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      component: Kattem,
+      component: Home,
     },
     {
-      path: "/Kattem2",
-      component: Kattem2,
+      path: "/doc",
+      component: Doc,
     },
   ],
 });
