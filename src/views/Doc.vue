@@ -1,7 +1,7 @@
 <template>
   <Topnav></Topnav>
   <div class="content" v-if="asideVisble">
-    <aside>
+    <aside class="">
       <h2>组件列表</h2>
       <ol>
         <li v-for="(item, index) in componentsList" :key="index">
@@ -29,7 +29,6 @@ export default {
       { name: 'Dialog 组件', path: '/doc/dialog' },
       { name: 'Tabs 组件', path: '/doc/tabs' },
     ]
-    console.log(asideVisble.value, 'asideVisble')
     return {
       asideVisble,
       componentsList,
@@ -42,9 +41,6 @@ aside {
   background-color: lightblue;
   width: 150px;
   padding: 70px 16px;
-  position: fixed;
-  top: 0;
-  left: 0;
   > h2 {
     margin-bottom: 4px;
   }
@@ -52,6 +48,11 @@ aside {
     > li {
       padding: 4px 0;
     }
+  }
+  @media (max-width: 500px) {
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }
 </style>
