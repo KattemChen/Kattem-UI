@@ -1,0 +1,66 @@
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.text-break {
+  white-space: normal;
+  word-break: break-all;
+}
+.text-hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.color-orange {
+  color: #ff8533;
+}
+.color-white {
+  color: #fff;
+}
+.color-green {
+  color: #00aaa6;
+}
+.color-gray {
+  color: #bcbcbc;
+}
+.color-white {
+  color: #fff;
+}
+.bg-green {
+  background-color: #00aaa6;
+}
+.bg-white {
+  background-color: #fff;
+}
+.bg-gray {
+  background-color: #f5f5f5;
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-row-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}

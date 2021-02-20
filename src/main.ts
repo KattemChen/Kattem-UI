@@ -3,7 +3,8 @@ import Home from "./views/Home.vue";
 import Doc from "./views/Doc.vue";
 
 import App from "./App.vue";
-import "./index.css";
+import "./index.scss";
+import "./assets/style/common.scss";
 import { createWebHashHistory, createRouter } from "vue-router";
 
 const history = createWebHashHistory();
