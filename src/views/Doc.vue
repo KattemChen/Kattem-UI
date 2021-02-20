@@ -1,6 +1,6 @@
 <template>
   <Topnav></Topnav>
-  <div class="content">
+  <div class="content" v-if="asideVisble">
     <aside>
       <h2>组件列表</h2>
       <ol>
@@ -14,20 +14,25 @@
     <main>主内容</main>
   </div>
 </template>
-<script>
+<script lang="ts">
 import Topnav from '../components/Topnav.vue'
+import { inject, Ref } from 'vue'
 export default {
   components: {
-    Topnav
+    Topnav,
   },
-  data () {
+  setup() {
+    const asideVisble = inject<Ref<boolean>>('asideVisible')
+    const componentsList = [
+      { name: 'Switch 组件', path: '/doc/switch' },
+      { name: 'Button 组件', path: '/doc/button' },
+      { name: 'Dialog 组件', path: '/doc/dialog' },
+      { name: 'Tabs 组件', path: '/doc/tabs' },
+    ]
+    console.log(asideVisble.value, 'asideVisble')
     return {
-      componentsList: [
-        { name: 'Switch 组件', path: '/doc/switch' },
-        { name: 'Button 组件', path: '/doc/button' },
-        { name: 'Dialog 组件', path: '/doc/dialog' },
-        { name: 'Tabs 组件', path: '/doc/tabs' }
-      ]
+      asideVisble,
+      componentsList,
     }
   },
 }
