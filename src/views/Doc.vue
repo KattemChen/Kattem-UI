@@ -3,16 +3,18 @@
     <Topnav toggleAsideButtonVisible class="nav"></Topnav>
     <div class="content" v-if="asideVisble">
       <aside class="">
-        <h2>组件列表</h2>
+        <h2>文档</h2>
         <ol>
           <li v-for="(item, index) in componentsList" :key="index">
-            <router-link :to="item.path">
+            <router-link :to="{ path: item.path }">
               {{ item.name }}
             </router-link>
           </li>
         </ol>
       </aside>
-      <main>主内容</main>
+      <main>
+        <router-view/>
+        </main>
     </div>
   </div>
 </template>

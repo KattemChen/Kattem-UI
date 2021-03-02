@@ -1,5 +1,5 @@
 <template>
   <div>
-    Switch文档
+    Tabs文档
   </div>
 </template>

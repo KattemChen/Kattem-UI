@@ -2,8 +2,7 @@
   <div class="topnav">
     <div class="logo">LOGO</div>
     <ul class="menu">
-      <li>菜单1</li>
-      <li>菜单2</li>
+      文档
     </ul>
     <span class="toggleAside"  @click="toggleMenu"></span>
   </div>
